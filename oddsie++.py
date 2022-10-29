@@ -47,6 +47,29 @@ def transpile(name):
 				for i in range(tcount):dent=dent+"\t"
 				edit=line.replace("otherwise ","else ",1).replace(" (",":") 
 				olines.append(dent+edit)
+		elif line.startswith("for "):
+				for i in range(tcount):dent=dent+"\t"
+				edit=line.replace(" (",":") 
+				olines.append(dent+edit)
+		elif line.startswith("from "):
+				for i in range(tcount):dent=dent+"\t"
+				olines.append(line)
+		elif line=="skip":
+				for i in range(tcount):dent=dent+"\t"
+				olines.append(dent+"pass")
+		elif line.startswith("attempt"):
+				for i in range(tcount):dent=dent+"\t"
+				olines.append(dent+"try:")
+		elif line.startswith("onError"):
+				for i in range(tcount):dent=dent+"\t"
+				olines.append(dent+"except:")
+		elif line.startswith("lastly"):
+				for i in range(tcount):dent=dent+"\t"
+				olines.append(dent+"finnaly:")
+		elif line.startswith("give "):
+				for i in range(tcount):dent=dent+"\t"
+				edit=line.replace("give ","return ")
+				olines.append(dent+edit)
 		if line.endswith(" ("):
 				tcount+=1
 		if line.endswith(" )"):
