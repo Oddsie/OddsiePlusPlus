@@ -72,7 +72,7 @@ def transpile(name):
 				olines.append(dent+edit)
 		if line.endswith(" ("):
 				tcount+=1
-		if line.endswith(" )"):
+		if line.endswith(");"):
 				tcount-=1
 	for item in olines:
 		o.write(item+"\n")
