@@ -21,15 +21,15 @@ class main (
 ```lua
 ;; Really Complicated Hello World
 class main (
-	var txt=""
+	var self.txt=""
 	function uno::self (
-		var txt=txt+"Hello,"
+		var self.txt=txt+"Hello,"
 	);
 	function dos::self (
-		var txt=txt+" world!"
+		var self.txt=txt+" world!"
 	);
 	function tres::self (
-		display txt
+		display self.txt
 	);
 	function __init__::self (
 	    .self.uno
