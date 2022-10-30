@@ -1,5 +1,5 @@
 # Oddsie++
- Oddsie is an "improved" version of Oddsie.
+ Oddsie++ is an "improved" version of Oddsie.
 # Examples
 ```lua
 use random
