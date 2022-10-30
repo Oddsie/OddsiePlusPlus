@@ -38,7 +38,5 @@ class main (
 );
 ```
 *^ An overly complicated Hello, World! program ^*
-# What do I need to code in Oddsie?
-- Linux (Won't work on Windows)
-- Python 3.7 and up
-- Oddsie
+# What do I need to code in Oddsie++?
+The same as Oddsie.
