@@ -4,16 +4,17 @@
 ```lua
 use random
 class main (
-  function __init__::self (
-    display "NUMBER GUESS"
-    var guess=int(input(":"))
-    var actual=random.randint(1,10)
-    if guess==actual (
-      display "Good Guess!"
-    );
-    otherwise (
-      display "Incorrect! Number was "+str(actual)+"!"
-    );
+	function __init__::self (
+		display "NUMBER GUESS"
+		var act=random.randint()
+		var gue=input(": ")
+		if gue==act (
+			display "Good Guess!"
+		);
+		otherwise (
+			display "Incorrect! Number was "+str(act)+"!"
+		);
+	);
 );
 ```
 *^ Simple number-guessing game ^*
