@@ -10,11 +10,11 @@ class main (
     var actual=random.randint(1,10)
     if guess==actual (
       display "Good Guess!"
-     )
+    );
     otherwise (
       display "Incorrect! Number was "+str(actual)+"!"
-     )
-)
+    );
+);
 ```
 *^ Simple number-guessing game ^*
 ```lua
@@ -23,19 +23,19 @@ class main (
 	var txt=""
 	function uno::self (
 		var txt=txt+"Hello,"
-	 )
+	);
 	function dos::self (
 		var txt=txt+" world!"
-	)
+	);
 	function tres::self (
 		display txt
-	 )
-  function __init__::self (
-    .self.uno
-    .self.dos
-    .self.tres
-   )
- )
+	);
+	function __init__::self (
+	    .self.uno
+	    .self.dos
+	    .self.tres
+	);
+);
 ```
 *^ An overly complicated Hello, World! program ^*
 # What do I need to code in Oddsie?
