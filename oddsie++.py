@@ -29,9 +29,15 @@ def transpile(name):
 				olines.append(dent+edit[0]+"("+edit[1]+")")
 		elif line.startswith(";;"):
 				pass
-		elif line.startswith("use "):
-				edit=line.replace("use ","import ",1)
+		elif line.startswith("use python "):
+				edit=line.replace("use python ","import ",1)
 				olines.append(edit)
+		elif line.startswith("use oddsie "):
+				edit=line.replace("use oddsie ","import library.",1)
+				olines.append(edit)
+		elif line.startswith("from "):
+				for i in range(tcount):dent=dent+"\t"
+				olines.append(line)
 		elif line=="die":
 				print(str(tcount))
 				for i in range(tcount):dent=dent+"\t"
@@ -51,9 +57,6 @@ def transpile(name):
 				for i in range(tcount):dent=dent+"\t"
 				edit=line.replace(" (",":") 
 				olines.append(dent+edit)
-		elif line.startswith("from "):
-				for i in range(tcount):dent=dent+"\t"
-				olines.append(line)
 		elif line=="skip":
 				for i in range(tcount):dent=dent+"\t"
 				olines.append(dent+"pass")
