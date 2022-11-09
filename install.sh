@@ -5,4 +5,4 @@ cd Oddsie
 gh repo clone Oddsie/OddsiePlusPlus
 cd OddsiePlusPlus
 chmod +x oddsie
-echo 'export PATH="$HOME/Oddsie:$PATH"' >> ~/.bashrc
+echo 'export PATH="$HOME/Oddsie/OddsiePlusPlus:$PATH"' >> ~/.bashrc
