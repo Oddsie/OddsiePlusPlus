@@ -1,1 +1,1 @@
-python3 oddsie++.py $1
+python3 $HOME/Oddsie/OddsiePlusPlus/oddsie++.py $1
