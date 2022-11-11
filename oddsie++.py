@@ -3,7 +3,7 @@ from sys import argv as args
 def transpile(name):
 	f=open(name)
 	o=open(name.replace(".opp",".py"),"w")
-	olines=["import sys",f"sys.path.append('~/OPP/Oddsie)"]
+	olines=["import sys",f"sys.path.append('~/OPP/Oddsie')"]
 	tcount=0
 	for line in f:
 		dent=""
