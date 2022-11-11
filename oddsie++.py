@@ -1,9 +1,12 @@
 from subprocess import run as shell
 from sys import argv as args
+import os
+def root():
+    return os.path.abspath(os.sep)
 def transpile(name):
 	f=open(name)
 	o=open(name.replace(".opp",".py"),"w")
-	olines=[]
+	olines=["import sys",f"sys.path.append({root()})"]
 	tcount=0
 	for line in f:
 		dent=""
