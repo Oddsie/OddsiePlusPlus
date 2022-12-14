@@ -1,7 +1,7 @@
 # Oddsie++
- Oddsie++ is an "improved" version of Oddsie.
-# Examples
-```lua
+ Oddsie++ is an "improved" version of Oddsie. It has a better syntax, and a better writing expirience. This time it interprets and transpiles your code, rather than doing one or the other.
+# Example
+```c++
 use random
 class main (
 	function __init__::self (
@@ -18,7 +18,7 @@ class main (
 );
 ```
 *^ Simple number-guessing game ^*
-```lua
+```c++
 ;; Really Complicated Hello World
 class main (
 	function __init__::self (
@@ -40,4 +40,4 @@ class main (
 ```
 *^ An overly complicated Hello, World! program ^*
 # What do I need to code in Oddsie++?
-The same as Oddsie.
+The same things you need for Oddsie.
